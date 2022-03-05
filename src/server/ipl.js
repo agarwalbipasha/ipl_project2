@@ -93,6 +93,22 @@ function economicalBowlersInAYear (matches, deliveries, year, count) {
   return reverseSortedArrayOfBowlers.slice(0, 10);
 }
 
+//Find the number of times each team won the toss and also won the match
+
+function countOfTeamWinningTossAndMatch (matches) {
+  return matches.reduce((countOfWinner, match) => {
+    let tossWinner = match['toss_winner'];
+    let winner = match['winner'];
+    if (tossWinner == winner) {
+      if (countOfWinner.hasOwnProperty(winner)) {
+        countOfWinner[winner] += 1;
+    } else { 
+      countOfWinner[winner] = 1;
+    } 
+  } return countOfWinner;
+}, {});
+}
+
 module.exports = {
   matchesPerYear,
   arrayOfYears,
@@ -100,5 +116,6 @@ module.exports = {
   matchesPlayedInAYear,
   matchesWonPerTeamPerYear,
   extraRunsConcededPerTeamInAYear,
-  economicalBowlersInAYear
+  economicalBowlersInAYear,
+  countOfTeamWinningTossAndMatch
 };

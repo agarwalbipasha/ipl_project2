@@ -10,6 +10,7 @@ CSVTOJSON()
     // console.log(ipl.arrayOfWinners(matches));
     // console.log(ipl.matchesPlayedInAYear(matches, 2016));
     // console.log(ipl.matchesWonPerTeamPerYear(matches));
+    console.log(ipl.countOfTeamWinningTossAndMatch(matches));
   CSVTOJSON()
   .fromFile("./data/deliveries.csv")
   .then((deliveries) => {
