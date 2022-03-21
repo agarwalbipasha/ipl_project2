@@ -20,6 +20,6 @@ CSVTOJSON()
         // console.log(
           // ipl.economicalBowlersInAYear(matches, deliveries, 2015, 10)
         // );
-        console.log(ipl.strikeRateOfABatsmanEachSeason (matches, deliveries, 'DA Warner'));
+        // console.log(ipl.strikeRateOfABatsmanEachSeason (matches, deliveries, 'DA Warner'));
       });
   });
