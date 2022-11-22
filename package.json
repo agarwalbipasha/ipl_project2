@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app"
   },
   "repository": {
     "type": "",
@@ -15,8 +16,10 @@
   "dependencies": {
     "amazon-cognito-identity-js": "^5.2.8",
     "axios": "^0.26.1",
+    "express": "^4.18.2",
     "fetch": "^1.1.0",
-    "node-fetch": "^3.2.3"
+    "node-fetch": "^3.2.3",
+    "nodemon": "^2.0.20"
   },
   "devDependencies": {
     "csvtojson": "^2.0.10"
